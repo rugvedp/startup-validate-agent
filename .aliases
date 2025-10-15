@@ -1,0 +1,48 @@
+# CrewAI Production Template - Shell Aliases
+# Add these to your ~/.bashrc or ~/.zshrc for easy access
+
+# Quick aliases
+alias crewai-help='make help'
+alias crewai-start='make dev'
+alias crewai-stop='make down'
+alias crewai-restart='make restart'
+alias crewai-logs='make logs'
+alias crewai-status='make status'
+alias crewai-health='make health'
+alias crewai-clean='make clean'
+
+# Development aliases
+alias crewai-dev='make dev'
+alias crewai-dev-build='make dev-build'
+alias crewai-dev-logs='make dev-logs'
+alias crewai-dev-down='make dev-down'
+
+# Production aliases
+alias crewai-prod='make prod'
+alias crewai-prod-build='make prod-build'
+alias crewai-prod-logs='make prod-logs'
+alias crewai-prod-down='make prod-down'
+
+# Database aliases
+alias crewai-db='make db-up'
+alias crewai-db-down='make db-down'
+alias crewai-db-logs='make db-logs'
+alias crewai-db-shell='make db-shell'
+alias crewai-db-backup='make db-backup'
+
+# Application aliases
+alias crewai-app='make app-up'
+alias crewai-app-down='make app-down'
+alias crewai-app-logs='make app-logs'
+
+# Monitoring aliases
+alias crewai-monitor='make monitor'
+alias crewai-benchmark='make benchmark'
+
+# Setup aliases
+alias crewai-setup='make setup'
+alias crewai-quick='make quick-start'
+
+# Cleanup aliases
+alias crewai-clean-all='make clean-all'
+alias crewai-reset='make clean-all && rm -f .env && make setup'
