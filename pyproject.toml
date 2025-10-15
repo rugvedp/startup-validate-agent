@@ -1,0 +1,23 @@
+[project]
+name = "startup_validate"
+version = "0.1.0"
+description = "startup_validate using crewAI"
+authors = [{ name = "Rugved Patil", email = "rugvedp00@gmail.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.203.0,<1.0.0"
+]
+
+[project.scripts]
+startup_validate = "startup_validate.main:run"
+run_crew = "startup_validate.main:run"
+train = "startup_validate.main:train"
+replay = "startup_validate.main:replay"
+test = "startup_validate.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

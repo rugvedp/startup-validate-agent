@@ -1,0 +1,83 @@
+market_analysis_task:
+  description: >
+    Analyze the market for the startup idea: {startup_idea}
+    Research market size (TAM/SAM/SOM), industry trends, market saturation,
+    demand patterns, and growth opportunities.
+  expected_output: >
+    Market analysis report covering: market size estimates (TAM/SAM/SOM) with assumptions, formulas, and sources;
+    industry classification; current trends; demand status (rising/stable/declining); market maturity; Base/Bull/Bear
+    scenarios; sensitivity analysis on 2-3 key inputs; assumptions vs knowns; data quality and limitations; tables and
+    optional chart suggestions.
+  agent: market_analyst
+
+competitive_analysis_task:
+  description: >
+    Research competitors and market landscape for: {startup_idea}
+    Identify direct competitors, substitutes, market gaps, and positioning opportunities.
+    Analyze competitive intensity and differentiation potential.
+  expected_output: >
+    Competitive landscape report with: top competitors and substitutes, comparison table with sourced metrics,
+    positioning analysis, moats and vulnerabilities, market gaps, competitive saturation level, differentiation strategies,
+    Porter's Five Forces summary, anticipated competitor responses (Base/Bull/Bear), evidence quality notes, and optional
+    chart suggestions.
+  agent: competitive_researcher
+
+business_model_task:
+  description: >
+    Evaluate business model and monetization for: {startup_idea}
+    Analyze revenue models, pricing strategies, customer segments, scalability,
+    and go-to-market approaches. Identify key risks and MVP validation methods.
+  expected_output: >
+    Business model analysis covering: revenue model options with pricing benchmarks; target customers and segments;
+    unit economics mini-model (formulas, inputs, outputs) with breakeven; Base/Bull/Bear scenarios; sensitivity for CAC,
+    conversion, churn, ARPU; scalability assessment; phased GTM; MVP experiments and success metrics; risk/mitigation table;
+    and optional chart suggestions.
+  agent: business_model_analyst
+
+funding_analysis_task:
+  description: >
+    Research funding landscape and ecosystem for: {startup_idea}
+    Analyze recent funding trends, active investors, startup stages, funding amounts,
+    and ecosystem maturity. Identify key regions and investment readiness factors.
+  expected_output: >
+    Funding ecosystem report with: recent funding data, round sizes, valuation ranges, active investors, stage/geo trends,
+    representative deals table with sources, comparable benchmarks (where applicable), recommended fundraising strategy
+    (amount, instrument, milestones) with a 12–18 month runway plan, dilution scenarios and cap table impact examples,
+    and optional chart suggestions.
+  agent: funding_analyst
+
+validation_scoring_task:
+  description: >
+    Provide comprehensive scoring and final assessment for: {startup_idea}
+    Score market opportunity (1-10), defensibility (1-10), business model viability (1-10),
+    investor alignment (1-10), and founder-market fit (1-10). Provide overall score and recommendations.
+  expected_output: >
+    Final validation report with: weighted dimension scores (1-10) and a scoring rubric table (weights visible);
+    overall investability score; rationale for each score with citations; sensitivity check on weights (+/-10%) and
+    impact on overall score; key strengths/weaknesses; improvement recommendations; next steps; and at least one
+    QuickChart visualization recommendation or URL for the scorer.
+  agent: validation_scorer
+
+manager_report_task:
+  description: >
+    As the Startup Validation Project Manager, synthesize all prior analyses into a
+    single comprehensive final report for: {startup_idea}. Ensure the report is very
+    detailed and long, covering every aspect of the validation framework, and include
+    explicit inline citations and reference links for all claims, data points, charts,
+    and quotes. Where applicable, add footnotes or endnotes and a complete references
+    section. Provide balanced analysis, limitations, and methodology notes.
+  expected_output: >
+    A comprehensive, publication-quality markdown report that includes:
+    - Executive summary with key findings and decision recommendation
+    - Market size (TAM/SAM/SOM) with sources, assumptions, and calculations
+    - Competitive landscape with positioning maps and referenced evidence
+    - Business model evaluation with pricing comps and referenced benchmarks
+    - Funding landscape with recent deals, active investors, and cited datasets
+    - Validation scoring synthesized with rationale and referenced inputs
+    - Go-to-market strategy, risks, and mitigation with cited best-practice sources
+    - Detailed methodology, assumptions, and data quality caveats
+    - Figures/tables as needed; include figure/table captions with sources
+    - Inline citations throughout (e.g., [1], [2]) and a References section with URLs
+    - Appendix: raw data summaries, additional charts, and notes
+  agent: startup_validation_manager
+
