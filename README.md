@@ -1,5 +1,9 @@
 # StartupValidate Crew
 
+<div align="center">
+  <img src="public/crew.png" alt="StartupValidate Crew" width="400" height="auto">
+</div>
+
 Welcome to the StartupValidate Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
 ## Installation
@@ -20,7 +24,7 @@ crewai install
 ```
 ### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+**Add your `GEMINI_API_KEY` into the `.env` file**
 
 - Modify `src/startup_validate/config/agents.yaml` to define your agents
 - Modify `src/startup_validate/config/tasks.yaml` to define your tasks
